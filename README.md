@@ -4,8 +4,10 @@ Automaticaly create your cover letter
 ---
 
 # How to use
-Add to the repository a file called
-> LM.txt
+Add to the repository a file called 'LM.txt'
+
+To launch the program, just use
+> python3 AutoLM.py
 
 Then, the program will ask you question about the entreprise, currently they are:
 
