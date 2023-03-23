@@ -1,0 +1,22 @@
+name: Convert txt to pdf
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install pandoc
+
+    - name: Convert txt to pdf
+      run: |
+        pandoc $file_name -o lm.pdf
