@@ -28,3 +28,16 @@ To file a field with an information, you have to write one of the operator below
 - [DATE]
 - [ADDRESS]
 - [TITLE]
+
+---
+
+# Advanced usage
+
+If you want to make a lot of cover letter, you can pass an excel file in argument
+
+> python3 AutoLM.py job_info.xlsx
+
+The xlsx file need to have the following field
+
+| jobTitle  | entrepriseName | address | city |
+|-----------|----------------|---------|------|
